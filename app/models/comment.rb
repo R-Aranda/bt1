@@ -1,5 +1,5 @@
 class Comment < ApplicationRecord
-  validates :body, presence: true, length: { minimum: 10 }
+  validates :body, presence: true, length: { minimum: 1 }
 
-  belongs_to :question
+  belongs_to :post
 end
